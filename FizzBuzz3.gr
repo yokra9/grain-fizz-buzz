@@ -1,0 +1,21 @@
+module FizzBuzz3
+
+from "list" include List
+
+let (|>) = (list, (fn, a)) => fn(a, list)
+
+List.init(100, n => n + 1) |>
+  (
+    List.map,
+    i =>
+      if (i % 3 == 0 && i % 5 == 0) {
+        "FizzBuzz"
+      } else if (i % 3 == 0) {
+        "Fizz"
+      } else if (i % 5 == 0) {
+        "Buzz"
+      } else {
+        toString(i)
+      },
+  ) |>
+  (List.forEach, n => print(n))
