@@ -1,8 +1,8 @@
 {
-    // Docker Images for WasmEdge
+    // Docker Image for WasmEdge
     "image": "wasmedge/wasmedge:ubuntu-build-gcc",
     "features": {
-        // Installs a set of common command line utilities, and sets up a non-root user.
+        // Install a set of common command line utilities, and set up a non-root user.
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": "false",
             "username": "vscode",
@@ -18,8 +18,8 @@
     },
     "remoteUser": "vscode",
     "remoteEnv": {
-        // Releases of grain-lang/grain: https://github.com/grain-lang/grain/releases
-        "GRAIN_BIN_URL": "https://github.com/grain-lang/grain/releases/download/grain-v0.6.4/grain-linux-x64"
+        // Latest release of Grain: https://github.com/grain-lang/grain/releases/latest
+        "GRAIN_BIN_URL": "https://github.com/grain-lang/grain/releases/latest/download/grain-linux-x64"
     },
     "onCreateCommand": {
         // Install Grain: https://grain-lang.org/docs/getting_grain
