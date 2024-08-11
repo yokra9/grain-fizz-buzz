@@ -1,0 +1,14 @@
+module FizzBuzz5
+
+from "list" include List
+
+let (|>) = (list, (fn, a)) => fn(a, list)
+
+List.init(100, n => n + 1) |>
+  (List.map, i => match (i % 15) {
+    3 | 6 | 9 | 12 => "Fizz",
+    5 | 10 => "Buzz",
+    0 => "FizzBuzz",
+    _ => toString(i),
+  }) |>
+  (List.forEach, n => print(n))
