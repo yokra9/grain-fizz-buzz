@@ -6,8 +6,8 @@
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": "false",
             "username": "vscode",
-            "userUid": "1000",
-            "userGid": "1000",
+            "userUid": "2000",
+            "userGid": "2000",
             "upgradePackages": "true"
         },
         // Install an up-to-date version of Git, built from source as needed.
